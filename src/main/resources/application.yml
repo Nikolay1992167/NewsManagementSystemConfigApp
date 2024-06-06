@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Nikolay1992167/ConfigService.git
+          search-paths: "{application}"
+          default-label: master
+server:
+  port: 8888
